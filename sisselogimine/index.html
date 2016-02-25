@@ -2,8 +2,7 @@
 1. Kõik elemendid hästi eraldi
 2. koledad kontrastsed värvid
 3. kirjeldused puuduvad 
-4. igasugu errorkastikesed kontrollid (täiesti ajuvabad)
-5. kaks nuppu üks kustutab kõik tühjaks teine üritab reaalselt sisse logida
+5. viis nuppu kõige alumine vasakul logib sisse
 6. sisselogimise kaste 10 (kasutajanimeks 5 ja parooliks 5) võtab esimesest neljast kastist esimese tähe ja viimasest ülejäänu (kui see vajalik)
 -->
 <!DOCTYPE html>
@@ -14,33 +13,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Prax2 parast sisselogimist</title>
+        <script src="js/sisselogimine.js"></script>
+        <style>
+            button {background-color:red}
+            body {background-color: yellow}
+        </style>
     </head>
     <body>
-        <form method="post" action="logisisse.php">
+        <form name="form" method="post" onSubmit="return validateForm(form);">
             <input type="text" name="1">
             <input type="text" name="6">
             <br>
-            <input type="button" value="logisisse?">
+            <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
             <br>
-            <input type="text" name="2">
-            <input type="text" name="7">
+            <div style="float:right;margin-top:300px">
+                <input type="text" name="2">
+                <input type="text" name="7">
+                <br>
+                <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+            </div>
             <br>
-            <input type="button" value="logisisse?">
+            <div style="float:left;margin-top:600px">
+                <input type="text" name="3">
+                <input type="text" name="8">
+                <br>
+                <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+            </div>
             <br>
-            <input type="text" name="3">
-            <input type="text" name="8">
+            <div style="float:right;margin-top:900px">
+                <input type="text" name="4">
+                <input type="text" name="9">
+                <br>
+                <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+            </div>    
             <br>
-            <input type="button" value="logisisse?">
-            <br>
-            <input type="text" name="4">
-            <input type="text" name="9">
-            <br>
-            <input type="button" value="logisisse?">
-            <br>
-            <input type="text" name="5">
-            <input type="text" name="10">
-            <br>
-            <button type="submit">logisisse?</button>
+            <div style="float:left;margin-top:1100px">
+                <input type="text" name="5">
+                <input type="text" name="10">
+                <br>
+                <button type="submit">logisisse?</button>
+            </div>
         </form>
     </body>
 </html>
