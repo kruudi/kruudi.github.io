@@ -1,10 +1,3 @@
-<!-- 
-1. Kõik elemendid hästi eraldi
-2. koledad kontrastsed värvid
-3. kirjeldused puuduvad 
-5. viis nuppu kõige alumine vasakul logib sisse
-6. sisselogimise kaste 10 (kasutajanimeks 5 ja parooliks 5) võtab esimesest neljast kastist esimese tähe ja viimasest ülejäänu (kui see vajalik)
--->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,46 +5,55 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Prax2 parast sisselogimist</title>
+        <title>Prax3 sisselogimine</title>
         <script src="js/sisselogimine.js"></script>
         <style>
             button {background-color:red}
             body {background-color: yellow}
         </style>
     </head>
-    <body>
-        <form name="form" method="post" onSubmit="return validateForm(form);">
-            <input type="text" name="1">
-            <input type="text" name="6">
+    <body onload="shuffle()">
+        <form name="form" method="post" onSubmit="return submitForm(form);" action="tubli!">
+            <pre style="color:green;margin:20px;font-weight:bold;">
+                1. Kõik elemendid hästi eraldi
+                2. koledad kontrastsed värvid
+                3. kirjeldused puuduvad 
+                5. viis nuppu neist randomly üks logib sisse, teised kustutavad vormi väljad tühjaks
+                6. sisselogimise välju 10 (kasutajanimeks 5 vasakpoolset ja parooliks 5 parempoolset)
+                7. kasutajanime ja parooliväljade väärtused liidetakse kokku, ükski väli ei tohi olla tühi (üks tühik asendab tühja välja)
+                8. ebaõnnestunud sisselogimis katse korral segatakse nupud uuesti (nupud nummerdatud ülevalt alla ühest viieni hetke sisselogimisnupp kuvatakse konsoolis)
+            </pre>
+            <input type="text" id="1">
+            <input type="text" id="6">
             <br>
-            <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+            <input id="but1" type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
             <br>
             <div style="float:right;margin-top:300px">
-                <input type="text" name="2">
-                <input type="text" name="7">
+                <input type="text" id="2">
+                <input type="text" id="7">
                 <br>
-                <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+                <input id="but2" type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
             </div>
             <br>
             <div style="float:left;margin-top:600px">
-                <input type="text" name="3">
-                <input type="text" name="8">
+                <input type="text" id="3">
+                <input type="text" id="8">
                 <br>
-                <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+                <input id="but3" type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
             </div>
             <br>
             <div style="float:right;margin-top:900px">
-                <input type="text" name="4">
-                <input type="text" name="9">
+                <input type="text" id="4">
+                <input type="text" id="9">
                 <br>
-                <input type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
+                <input id="but4" type="button" style="background-color:red" value="logisisse?" onclick="resetForm(form)">
             </div>    
             <br>
             <div style="float:left;margin-top:1100px">
-                <input type="text" name="5">
-                <input type="text" name="10">
+                <input type="text" id="5">
+                <input type="text" id="10">
                 <br>
-                <button type="submit">logisisse?</button>
+                <input id="but5" type="button" style="background-color:red" value="logisisse?" onclick="">
             </div>
         </form>
     </body>
