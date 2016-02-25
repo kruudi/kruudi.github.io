@@ -1,0 +1,26 @@
+<!-- 
+1. Kõik elemendid hästi eraldi
+2. koledad kontrastsed värvid
+3. kirjeldused puuduvad 
+4. igasugu errorkastikesed kontrollid (täiesti ajuvabad)
+5. kaks nuppu üks kustutab kõik tühjaks teine üritab reaalselt sisse logida
+6. sisselogimise kaste 10 (kasutajanimeks 5 ja parooliks 5) võtab esimesest neljast kastist esimese tähe ja viimasest ülejäänu (kui see vajalik)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Prax2 parast sisselogimist</title>
+    </head>
+    <body>
+        <form method="post" action="logisisse.php">
+            <input type="text" name="1">
+            <input type="text" name="2">
+            <button type="submit">logisisse?</button>
+            <input type="button" name="logisisse?">
+        </form>
+    </body>
+</html>
