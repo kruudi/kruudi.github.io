@@ -72,6 +72,7 @@
 			'</div>' +
 			'</div>' +
 			'</div>'
+		   console.log(projectElement)
 		   $(projectElement).appendTo("#concerts div");
 		});
 	});
