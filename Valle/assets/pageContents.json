@@ -1,0 +1,22 @@
+{
+   "projects": [
+       {
+		   "projectno": 1,
+           "title": "Concert series “i as in Interpreter”: Valle-Rasmus Roots (cello), Sten Lassmann (piano)",
+           "asset": "Roots_Lassmann.jpg",
+           "content": "Programme:<br>Rachmaninoff. Sonata for Cello and Piano in G minor, op. 19 <br>Shostakovich. Sonata for Cello and Piano in D minor, op. 40 <br>Prokofiev. Sonata for Cello and Piano in C major, op. 119 <br><br>You will hear the 20th century masterpieces of the cello repertoire – the sonatas for cello and piano by Rachmaninoff, Shostakovich, and Prokofiev. Although in this genre, these Russian classics composed only one piece each, every sonata brings out the intense melodiousness and the virtuous abilities of the cello, and gives a great style example of the works of the composers. In the Russian cello sonatas, romantic passion, elegiac poetry, and intense storytelling will be connected to form an unforgettable unity."
+	   },
+       {
+		   "projectno": 2,
+           "title": "Final concert of the season. Valle-Rasmus Roots (cello), Pärnu City Orchestra",
+           "asset": "Parnu.jpg",
+           "content": "Soloist: Valle-Rasmus Roots (cello) <br>Pärnu City Orchestra<br>Conductor: Jüri Alperten<br>Repertoire: Pyotr Tchaikovsky - Symphony No. 5 in E minor Op. 64. <br>Antonín Dvořák - Cello Concerto in B minor, Op. 104, B. 191.<br>Mikhail Glinka - \"Ruslan and Lyudmila\" Overture"
+       },
+       {
+		   "projectno": 3,
+           "title": "Uhke project",
+           "asset": "no asset found",
+           "content": "Reporter"
+       }
+   ]
+}
