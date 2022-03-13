@@ -34,8 +34,8 @@
                             '</div>' +
                             '</div>' +
                             '</div>'
-                        console.log(projectElement);
-                        $(projectElement).appendTo("#concerts div");
+                        console.log(1);
+                        $(projectElement).appendTo(this);
                     });
                 });
 			
