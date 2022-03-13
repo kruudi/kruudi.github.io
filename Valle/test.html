@@ -6,9 +6,6 @@
 
     $(function() {
 
-
-   var people = [];
-
    $.getJSON('assets/pageContents.json', function(data) {
        $.each(data.projects, function(i, f) {
 		  var projectElement = '<div class="row justify-content-center no-gutters mb-5 mb-lg-0">' +
@@ -28,7 +25,7 @@
 			'</div>' +
 			'</div>'
 		   console.log(projectElement)
-           $(projectElement).appendTo("#userdata div");
+           $(projectElement).appendTo("#userdata");
      });
 
    });
@@ -41,12 +38,12 @@
 
 <div class="wrapper">
 <div class="profile" id= "userdata">
-<div>
 
-</div>
 
 </div>
 </div>
 
 </body>
 </html>
+
+
