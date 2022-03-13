@@ -15,7 +15,6 @@
 
     		return this.each(function() {
 				var o = options;
-                console.log(o.elementcnt);
                 
                  $.getJSON('assets/pageContents.json', function(data) {
                      console.log("json loaded")
