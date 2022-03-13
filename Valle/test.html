@@ -13,6 +13,7 @@
        $.each(data.projects, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.asset + "</td>" +
            "<td>" + f.content + "</td>" + "<td>" + f.title + "</td>" + "<td>" + f.projectno + "</td>" + "</tr>"
+		   console.log(tblRow)
            $(tblRow).appendTo("#userdata tbody");
      });
 
